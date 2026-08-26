@@ -1,0 +1,4 @@
+streamlit
+apng
+opencv-python-headless
+Pillow
