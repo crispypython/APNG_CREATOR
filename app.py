@@ -56,12 +56,12 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header principal
-st.title("🎬 APNG Studio & Converter")
+st.title(" APNG Studio & Converter")
 st.caption("Herramienta de conversión de secuencias PNG y videos MP4 a formato APNG.")
 
 st.divider()
 
-# 2. Selector de origen de datos y parámetros
+# Selector de origen de datos y parámetros
 col1, col2 = st.columns([1, 1])
 
 with col1:
@@ -77,7 +77,7 @@ if modo == "Secuencia de imágenes (PNG)":
 else:
     archivos = st.file_uploader("Selecciona o arrastra un archivo MP4", type=["mp4"])
 
-# 3. Lógica de procesamiento
+# Lógica de procesamiento
 if archivos:
     if st.button("Generar APNG"):
         barra_progreso = st.progress(0)
@@ -137,7 +137,7 @@ if archivos:
         # Descarga del archivo
         with open(ruta_salida, "rb") as file:
             st.download_button(
-                label="📥 Descargar APNG Resultante",
+                label=" Descargar APNG Resultante",
                 data=file,
                 file_name="animacion_optimizada.png",
                 mime="image/png"
@@ -146,7 +146,7 @@ if archivos:
 # 4. Sección Informativa Profesional
 st.markdown("""
 <div class="info-card">
-    <h4>💡 Sobre el formato APNG (Animated Portable Network Graphics)</h4>
+    <h4> Sobre el formato APNG (Animated Portable Network Graphics)</h4>
     <p><b>APNG</b> es una extensión del formato de imagen PNG que permite animaciones manteniendo una calidad superior a la de los GIFs tradicionales.</p>
     <ul>
         <li><b>Calidad de color:</b> Compatible con profundidad de color de 24 bits y canal alfa de transparencia de 8 bits.</li>
